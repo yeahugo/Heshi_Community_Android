@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="umeng_comm_weixin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/umeng_community_android_library/libs/umeng_comm_weixin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

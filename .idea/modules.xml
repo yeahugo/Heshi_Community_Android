@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/heshi_android.iml" filepath="$PROJECT_DIR$/heshi_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mainActivity/mainActivity.iml" filepath="$PROJECT_DIR$/mainActivity/mainActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeng_community_android_library/umeng_community_android_library.iml" filepath="$PROJECT_DIR$/umeng_community_android_library/umeng_community_android_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeng_community_android_sdk/umeng_community_android_sdk.iml" filepath="$PROJECT_DIR$/umeng_community_android_sdk/umeng_community_android_sdk.iml" />
+    </modules>
+  </component>
+</project>
+
