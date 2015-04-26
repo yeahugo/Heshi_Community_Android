@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string-array name="apps_func">
+        <item>图片</item>
+        <item>拍照</item>
+    </string-array>
+    <string-array name="apps_func_icon">
+        <item>icon_photo</item>
+        <item>icon_camera</item>
+    </string-array>
     <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="default_smiley_texts">
@@ -25,6 +35,15 @@
         <item>话题聚合</item>
         <item>活跃用户</item>
     </string-array>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="btn_select">#888888</color>
+    <color name="btn_send_textcolor">@color/white</color>
+    <color name="common_bg">@color/white</color>
+    <color name="spilt_line">#CFCFCF</color>
+    <color name="toolbar_btn_nomal">@color/white</color>
+    <color name="toolbar_btn_select">#D9D9D9</color>
+    <color name="toolbar_spilt_line">#CDCDCD</color>
     <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/src/main/res/values/umeng_comm_colors.xml -->
     <eat-comment/>
     <color name="umeng_comm_clip_image_paint">#aa000000</color>
@@ -71,16 +90,32 @@
     <color name="umeng_socialize_text_title">#464f61</color>
     <color name="umeng_socialize_text_ucenter">#595959</color>
     <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="white">#FFFFFF</color>
     <declare-styleable name="FlowLayout"><attr format="dimension" name="horizontalSpacing"/><attr format="dimension" name="verticalSpacing"/><attr format="enum" name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="boolean" name="debugDraw"/></declare-styleable>
     <declare-styleable name="FlowLayout_LayoutParams"><attr format="boolean" name="layout_newLine"/><attr format="dimension" name="layout_horizontalSpacing"/><attr format="dimension" name="layout_verticalSpacing"/></declare-styleable>
     <declare-styleable name="SingleTouchView"><attr format="reference" name="src"/><attr format="boolean" name="editable"/><attr format="color" name="frameColor"/><attr format="dimension" name="frameWidth"/><attr format="dimension" name="framePadding"/><attr format="float" name="degree"/><attr format="float" name="scale"/><attr format="reference" name="controlDrawable"/><attr name="controlLocation"><enum name="left_top" value="0"/><enum name="right_top" value="1"/><enum name="right_bottom" value="2"/><enum name="left_bottom" value="3"/></attr></declare-styleable>
     <declare-styleable name="SlidingTextView"><attr format="dimension" name="circleRadius"/><attr format="dimension" name="circleMarginTop"/><attr format="dimension" name="circleMargin"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <dimen name="alphabet_size">12dip</dimen>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="bar_height">35dp</dimen>
+    <dimen name="horizontalspit_view_height">0.6dp</dimen>
     <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/src/main/res/values/umeng_comm_dimens.xml -->
     <eat-comment/>
     <dimen name="image_item_heght">150dp</dimen>
     <dimen name="image_item_padding">3dp</dimen>
     <dimen name="image_item_space">3dp</dimen>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="indicator_margin">10dp</dimen>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/src/main/res/values/umeng_comm_dimens.xml -->
+    <eat-comment/>
     <dimen name="text_big12_size">12sp</dimen>
     <dimen name="text_big13_size">13sp</dimen>
     <dimen name="text_big14_size">14sp</dimen>
@@ -91,7 +126,21 @@
     <eat-comment/>
     <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
     <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="verticalspit_view_width">0.6dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">KeyBoard</string>
+    <string name="btn_text_send">发送</string>
+    <string name="btn_text_speak">按住 说话</string>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <string name="com_facebook_loading">Loading…</string>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
     <string name="pull_to_refresh_refreshing_label" translatable="false">加载中…</string>
     <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
@@ -336,6 +385,12 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/up_in</item>
+        <item name="android:windowExitAnimation">@anim/down_out</item>
+    </style>
     <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.UMDefault" parent="android:style/Theme.NoTitleBar"/>
@@ -355,6 +410,17 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:background">@android:color/white</item>
     </style>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="keyboard_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/src/main/res/values/umeng_comm_styles.xml -->
+    <eat-comment/>
     <style name="umeng_comm_dialog_fullscreen">
 
         <!-- 背景透明 -->

@@ -64,6 +64,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.keyboard.utils.EmoticonsUtils;
+import com.keyboard.utils.EmoticonsKeyboardBuilder;
+import com.keyboard.EmoticonsKeyBoardPopWindow;
 import com.umeng.comm.core.beans.CommConfig;
 import com.umeng.comm.core.beans.CommUser;
 import com.umeng.comm.core.beans.CommUser.Gender;
@@ -265,6 +268,9 @@ public class PostFeedActivity extends BaseFragmentActivity implements OnClickLis
         findViewById(ResFinder.getId("umeng_comm_select_location_btn")).setOnClickListener(
                 this);
         findViewById(ResFinder.getId("umeng_comm_at_friend_btn")).setOnClickListener(this);
+
+        //表情
+        findViewById(ResFinder.getId("umeng_comm_emoji_btn")).setOnClickListener(this);
 
         mPhotoButton = (ToggleButton) findViewById(ResFinder
                 .getId("umeng_comm_add_image_btn"));
@@ -683,6 +689,12 @@ public class PostFeedActivity extends BaseFragmentActivity implements OnClickLis
             // executeDismissAnimForTopicTip();
             showTopicFragment();
             changeButtonStatus(false, true);
+        } else if(ResFinder.getId("umeng_comm_emoji_btn") == id){
+            Log.v("log here","emoji press here!!");
+            EmoticonsKeyBoardPopWindow mKeyBoardPopWindow = new EmoticonsKeyBoardPopWindow(this);
+            mKeyBoardPopWindow.setBuilder(EmoticonsUtils.getSimpleBuilder(this));
+            mKeyBoardPopWindow.setEditText(et_content);
+            mKeyBoardPopWindow.showPopupWindow();
         }
     }
 

@@ -213,6 +213,25 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/umeng_comm_emoji_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <ToggleButton
+                    android:id="@+id/umeng_comm_emoji_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/umeng_comm_emoji_bt"
+                    android:contentDescription="@string/umeng_comm_new_post"
+                    android:scaleType="fitXY"
+                    android:textOff=""
+                    android:textOn="" />
+            </FrameLayout>
+
+            <FrameLayout
                 android:id="@+id/umeng_comm_take_photo_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
