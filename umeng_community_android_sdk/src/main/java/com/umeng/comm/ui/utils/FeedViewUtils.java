@@ -24,14 +24,15 @@
 
 package com.umeng.comm.ui.utils;
 
-import android.R;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.text.style.ImageSpan;
@@ -43,12 +44,17 @@ import com.umeng.comm.core.constants.Constants;
 import com.umeng.comm.core.listeners.Listeners.SimpleFetchListener;
 import com.umeng.comm.core.nets.responses.LoginResponse;
 import com.umeng.comm.core.utils.CommonUtils;
+import com.umeng.comm.core.utils.ResFinder;
 import com.umeng.comm.core.utils.ToastMsg;
+import com.umeng.comm.ui.R;
 import com.umeng.comm.ui.activities.TopicDetailActivity;
 import com.umeng.comm.ui.activities.UserInfoActivity;
 import com.umeng.comm.ui.utils.textspan.AbsClickSpan;
 import com.umeng.comm.ui.widgets.TextViewFixTouchConsume;
 
+import com.keyboard.utils.EmoticonsUtils;
+
+import java.lang.reflect.Field;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.HashMap;
@@ -63,38 +69,14 @@ import java.util.HashMap;
  */
 public final class FeedViewUtils {
 
-	private static Pattern mPattern;
 	private static Context mContext;
-	private static String[] mSmileyTexts;
-	private static HashMap<String, Integer> mSmileyToRes;  
+    public static final Pattern EMOTION_URL = Pattern.compile("\\[(\\S+?)\\]");
+    private static String[] mSmileyToRes;
 
-//	public static final int[] DEFAULT_SMILEY_RES_IDS = {  
-//        R.drawable.aini,  
-//        R.drawable.aoteman,  
-//        R.drawable.baibai,  
-//        R.drawable.baobao,  
-//        R.drawable.beiju,  
-//        R.drawable.beishang,  
-//        R.drawable.bianbian,  
-//        R.drawable.bishi,  
-//        R.drawable.bizui,  
-//        R.drawable.buyao,  
-//        R.drawable.chanzui,  
-//    };
-	
-//	private static HashMap<String, Integer> buildSmileyToRes() {  
-//        if (DEFAULT_SMILEY_RES_IDS.length != mSmileyTexts.length) {  
-//            throw new IllegalStateException("Smiley resource ID/text mismatch");  
-//        }  
-//  
-//        HashMap<String, Integer> smileyToRes = new HashMap<String, Integer>(mSmileyTexts.length);  
-//        for (int i = 0; i < mSmileyTexts.length; i++) {  
-//            smileyToRes.put(mSmileyTexts[i], DEFAULT_SMILEY_RES_IDS[i]);  
-//        }  
-//  
-//        return smileyToRes;  
-//    } 
-	
+    static {
+        mSmileyToRes = EmoticonsUtils.xhsemojiArray;
+    }
+
     /**
      * 渲染话题跟好友</br>
      * 
@@ -119,7 +101,7 @@ public final class FeedViewUtils {
         renderFriends(context, item, contentSsb);
 
 //        // 渲染表情
-//        renderEmojis(context, item, contentSsb);
+        renderEmojis(context, item, contentSsb);
         // 多一个空格
         contentSsb.append(" ");
         //
@@ -127,41 +109,45 @@ public final class FeedViewUtils {
     }
     
     //构建正则表达式
-    private static Pattern buildPattern() {
-        StringBuilder patternString = new StringBuilder(mSmileyTexts.length * 3);
-        patternString.append('(');
-        for (String s : mSmileyTexts) {
-            patternString.append(Pattern.quote(s));
-            patternString.append('|');
-        }
-        patternString.replace(patternString.length() - 1, patternString.length(), ")");
 
-        return Pattern.compile(patternString.toString());
+    public static int getResId(String resName, Class<?> c) {
+        try {
+            Field idField = c.getDeclaredField(resName);
+            return idField.getInt(idField);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
     }
+
     
-//    private static void renderEmojis(Context context, FeedItem feedItem, SpannableStringBuilder contentSsb)
-//    {
-//        Spannable spannable = contentSsb.newSpannable(feedItem.text);
-//        char c = str.charAt(0);
-//        Pattern p = Pattern.compile("([\ud83d\ude01-\ud83d\ude45])");
-//        Matcher m = p.matcher(str);
-//        while (m.find()) {
-//            if (mSpannables.get(m.group()) == null) {
-//                Bitmap b = BitmapFactory.decodeResource(myApp.getAppContext().getResources(), R.drawable.u0033);
-//                ImageSpan imp = new ImageSpan(Bitmap.createScaledBitmap(b, 70, 70, false));
-//                mSpannables.put(m.group(), imp);
-//            }
-//            spannable.setSpan(mSpannables.get(m.group()), m.start(), m.end(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-//        }
-//        return spannable;
-//    }
-//        mPattern = buildPattern();
-//    	Matcher matcher = mPattern.matcher(feedItem.text);
-//    	while(matcher.find()){
-//    		int resId = mSmileyToRes.get(matcher.group());
-//    		contentSsb.setSpan(new ImageSpan(mContext, resId),matcher.start(), matcher.end(),Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-//    	}
-//    }
+    private static void renderEmojis(Context context, FeedItem feedItem, SpannableStringBuilder contentSsb)
+    {
+        Matcher matcher = EMOTION_URL.matcher(feedItem.text);
+
+        while(matcher.find()){
+            String matchString = matcher.group(0);
+            Log.d("Debug:::::::",matchString);
+            for (String resNameString : mSmileyToRes){
+                String[] textArray = resNameString.split(",");
+                String emojiName = textArray[1];
+                if (emojiName.equalsIgnoreCase(matchString)){
+                    String emojiId = textArray[0];
+                    Log.d("resName ",emojiId);
+                    emojiId = emojiId.substring(0,emojiId.length()-4);
+                    int resourceId= getResId(emojiId,R.drawable.class);
+                    if (resourceId > 0)
+                    {
+                        Drawable dr = context.getResources().getDrawable(resourceId);
+                        dr.setBounds(0, 0, dr.getIntrinsicWidth()*4/5, dr.getIntrinsicHeight()*4/5);
+                        ImageSpan imageSpan = new ImageSpan(dr);
+                        contentSsb.setSpan(imageSpan,matcher.start(), matcher.end(),Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                        break;
+                    }
+                }
+            }
+        }
+    }
 
     /**
      * 渲染好友文本</br>

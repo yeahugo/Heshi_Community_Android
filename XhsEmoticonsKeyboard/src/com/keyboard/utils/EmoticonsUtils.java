@@ -40,9 +40,9 @@ public class EmoticonsUtils {
                     /**
                      * FROM ASSETS
                      */
-                    ArrayList<EmoticonBean> xhsfaceArray = ParseData(xhsemojiArray, EmoticonBean.FACE_TYPE_NOMAL, ImageBase.Scheme.ASSETS);
+                    ArrayList<EmoticonBean> xhsfaceArray = ParseData(xhsemojiArray, EmoticonBean.FACE_TYPE_NOMAL, ImageBase.Scheme.DRAWABLE);
                     EmoticonSetBean xhsEmoticonSetBean = new EmoticonSetBean("xhs", 3, 7);
-                    xhsEmoticonSetBean.setIconUri("assets://f023.png");
+                    xhsEmoticonSetBean.setIconUri("drawable://f023");
                     xhsEmoticonSetBean.setItemPadding(20);
                     xhsEmoticonSetBean.setVerticalSpacing(10);
                     xhsEmoticonSetBean.setShowDelBtn(true);
@@ -193,5 +193,4 @@ public class EmoticonsUtils {
             "f018.png,[害羞]",
             "f019.png,[嘿嘿]",
             "f020.png,[嘻嘻]"};
-
 }
