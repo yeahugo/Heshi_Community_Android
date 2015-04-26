@@ -204,6 +204,9 @@ public class PostFeedActivity extends BaseFragmentActivity implements OnClickLis
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
 
+        //初始化表情
+        EmoticonsUtils.initEmoticonsDB(getApplicationContext());
+
         setContentView(ResFinder.getLayout("umeng_comm_post_feed_layout"));
         setFragmentContainerId(ResFinder.getId("umeng_comm_select_layout"));
         initViews();
@@ -690,10 +693,10 @@ public class PostFeedActivity extends BaseFragmentActivity implements OnClickLis
             showTopicFragment();
             changeButtonStatus(false, true);
         } else if(ResFinder.getId("umeng_comm_emoji_btn") == id){
-            Log.v("log here","emoji press here!!");
+            Log.d(TAG,"umeng emoji press");
             EmoticonsKeyBoardPopWindow mKeyBoardPopWindow = new EmoticonsKeyBoardPopWindow(this);
             mKeyBoardPopWindow.setBuilder(EmoticonsUtils.getSimpleBuilder(this));
-            mKeyBoardPopWindow.setEditText(et_content);
+            mKeyBoardPopWindow.setEditText(mEditText);
             mKeyBoardPopWindow.showPopupWindow();
         }
     }

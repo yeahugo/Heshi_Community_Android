@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   	<item android:state_pressed="true" android:drawable="@drawable/iv_face_pressed"/> 
+</selector><!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/XhsEmoticonsKeyboard/res/drawable/iv_face.xml --><!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/umeng_community_android_sdk/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/drawable/iv_face.xml -->

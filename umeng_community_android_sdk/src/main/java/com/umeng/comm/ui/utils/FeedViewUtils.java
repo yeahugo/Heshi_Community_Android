@@ -34,7 +34,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
 import android.widget.TextView;
-import android.text.style.ImageSpan;  
+import android.text.style.ImageSpan;
 
 import com.umeng.comm.core.beans.CommUser;
 import com.umeng.comm.core.beans.FeedItem;
@@ -111,16 +111,13 @@ public final class FeedViewUtils {
         // 文本内容
         final String content = item.text;
         final Context context = contentTextView.getContext();
-             
-//        if(mSmileyToRes.isEmpty()){
-//            mSmileyToRes = buildSmileyToRes();        	
-//        }
-        //
+
         SpannableStringBuilder contentSsb = new SpannableStringBuilder(content);
         // 添加话题
         renderTopics(context, item, contentSsb);
         // 渲染好友
         renderFriends(context, item, contentSsb);
+
 //        // 渲染表情
 //        renderEmojis(context, item, contentSsb);
         // 多一个空格
@@ -142,15 +139,29 @@ public final class FeedViewUtils {
         return Pattern.compile(patternString.toString());
     }
     
-    private static void renderEmojis(Context context, FeedItem feedItem, SpannableStringBuilder contentSsb)
-    {
-        mPattern = buildPattern();
-    	Matcher matcher = mPattern.matcher(feedItem.text);
-    	while(matcher.find()){
-    		int resId = mSmileyToRes.get(matcher.group());  
-    		contentSsb.setSpan(new ImageSpan(mContext, resId),matcher.start(), matcher.end(),Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);  
-    	}
-    }
+//    private static void renderEmojis(Context context, FeedItem feedItem, SpannableStringBuilder contentSsb)
+//    {
+//        Spannable spannable = contentSsb.newSpannable(feedItem.text);
+//        char c = str.charAt(0);
+//        Pattern p = Pattern.compile("([\ud83d\ude01-\ud83d\ude45])");
+//        Matcher m = p.matcher(str);
+//        while (m.find()) {
+//            if (mSpannables.get(m.group()) == null) {
+//                Bitmap b = BitmapFactory.decodeResource(myApp.getAppContext().getResources(), R.drawable.u0033);
+//                ImageSpan imp = new ImageSpan(Bitmap.createScaledBitmap(b, 70, 70, false));
+//                mSpannables.put(m.group(), imp);
+//            }
+//            spannable.setSpan(mSpannables.get(m.group()), m.start(), m.end(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//        }
+//        return spannable;
+//    }
+//        mPattern = buildPattern();
+//    	Matcher matcher = mPattern.matcher(feedItem.text);
+//    	while(matcher.find()){
+//    		int resId = mSmileyToRes.get(matcher.group());
+//    		contentSsb.setSpan(new ImageSpan(mContext, resId),matcher.start(), matcher.end(),Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//    	}
+//    }
 
     /**
      * 渲染好友文本</br>

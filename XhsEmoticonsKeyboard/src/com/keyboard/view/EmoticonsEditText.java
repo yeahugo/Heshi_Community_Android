@@ -31,6 +31,19 @@ public class EmoticonsEditText extends EditText {
 
     public EmoticonsEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        mContext = context;
+        mFontHeight = getFontHeight();
+        mItemHeight = mFontHeight;
+        mItemWidth = mFontHeight;
+
+        if (emoticonBeanList == null) {
+            DBHelper dbHelper = new DBHelper(mContext);
+            emoticonBeanList = dbHelper.queryAllEmoticonBeans();
+            dbHelper.cleanup();
+            if (emoticonBeanList == null) {
+                return;
+            }
+        }
     }
 
     public EmoticonsEditText(Context context) {
@@ -123,20 +136,20 @@ public class EmoticonsEditText extends EditText {
                 }
             }
 
-            if (!isEmoticonMatcher) {
-                ImageSpan[] oldSpans = getText().getSpans(start, end, ImageSpan.class);
-                if(oldSpans != null){
-                    for (int i = 0; i < oldSpans.length; i++) {
-                        int startOld = end;
-                        int endOld = after + getText().getSpanEnd(oldSpans[i]) - 1;
-                        if (startOld >= 0 && endOld > startOld) {
-                            ImageSpan imageSpan = new ImageSpan(oldSpans[i].getDrawable(), ImageSpan.ALIGN_BASELINE);
-                            getText().removeSpan(oldSpans[i]);
-                            getText().setSpan(imageSpan, startOld, endOld, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
-                        }
-                    }
-                }
-            }
+//            if (!isEmoticonMatcher) {
+//                ImageSpan[] oldSpans = getText().getSpans(start, end, ImageSpan.class);
+//                if(oldSpans != null){
+//                    for (int i = 0; i < oldSpans.length; i++) {
+//                        int startOld = end;
+//                        int endOld = after + getText().getSpanEnd(oldSpans[i]) - 1;
+//                        if (startOld >= 0 && endOld > startOld) {
+//                            ImageSpan imageSpan = new ImageSpan(oldSpans[i].getDrawable(), ImageSpan.ALIGN_BASELINE);
+//                            getText().removeSpan(oldSpans[i]);
+//                            getText().setSpan(imageSpan, startOld, endOld, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+//                        }
+//                    }
+//                }
+//            }
         }
         if(onTextChangedInterface != null){
             onTextChangedInterface.onTextChanged(arg0);

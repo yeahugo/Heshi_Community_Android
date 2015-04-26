@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:fromYDelta="0"
+        android:toYDelta="80%p"
+        android:duration="400"
+        />
+</set><!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/XhsEmoticonsKeyboard/res/anim/down_out.xml --><!-- From: file:/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/res/anim/down_out.xml -->
