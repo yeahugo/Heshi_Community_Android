@@ -66,46 +66,46 @@ public final class R {
 		public static final int iv_face_pressed = 0x7f02006f;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f0b00e5;
-		public static final int btn_face = 0x7f0b00db;
-		public static final int btn_multimedia = 0x7f0b00dc;
-		public static final int btn_send = 0x7f0b00dd;
-		public static final int btn_voice = 0x7f0b00d7;
-		public static final int btn_voice_or_text = 0x7f0b00d6;
-		public static final int ei_indicator = 0x7f0b00d3;
-		public static final int et_chat = 0x7f0b00da;
-		public static final int gv_apps = 0x7f0b00d0;
-		public static final int hsv_toolbar = 0x7f0b00d4;
-		public static final int ic_facekeyboard = 0x7f0b00df;
+		public static final int action_settings = 0x7f0b00fb;
+		public static final int btn_face = 0x7f0b00f1;
+		public static final int btn_multimedia = 0x7f0b00f2;
+		public static final int btn_send = 0x7f0b00f3;
+		public static final int btn_voice = 0x7f0b00ed;
+		public static final int btn_voice_or_text = 0x7f0b00ec;
+		public static final int ei_indicator = 0x7f0b00e9;
+		public static final int et_chat = 0x7f0b00f0;
+		public static final int gv_apps = 0x7f0b00e6;
+		public static final int hsv_toolbar = 0x7f0b00ea;
+		public static final int ic_facekeyboard = 0x7f0b00f5;
 		public static final int item_iv_face = 0x7f0b000e;
 		public static final int iv_icon = 0x7f0b000f;
-		public static final int ly_autoheight = 0x7f0b00d1;
-		public static final int ly_foot_func = 0x7f0b00de;
-		public static final int ly_tool = 0x7f0b00d5;
+		public static final int ly_autoheight = 0x7f0b00e7;
+		public static final int ly_foot_func = 0x7f0b00f4;
+		public static final int ly_tool = 0x7f0b00eb;
 		public static final int rl_content = 0x7f0b000d;
-		public static final int rl_input = 0x7f0b00d9;
-		public static final int rl_multi_and_send = 0x7f0b00d8;
+		public static final int rl_input = 0x7f0b00ef;
+		public static final int rl_multi_and_send = 0x7f0b00ee;
 		public static final int rl_parent = 0x7f0b000c;
 		public static final int v_spit = 0x7f0b000b;
 		public static final int view = 0x7f0b000a;
-		public static final int view_eiv = 0x7f0b00e2;
-		public static final int view_epv = 0x7f0b00e1;
-		public static final int view_etv = 0x7f0b00e4;
-		public static final int view_spit1 = 0x7f0b00e0;
-		public static final int view_spit2 = 0x7f0b00e3;
-		public static final int vp_face = 0x7f0b00d2;
+		public static final int view_eiv = 0x7f0b00f8;
+		public static final int view_epv = 0x7f0b00f7;
+		public static final int view_etv = 0x7f0b00fa;
+		public static final int view_spit1 = 0x7f0b00f6;
+		public static final int view_spit2 = 0x7f0b00f9;
+		public static final int vp_face = 0x7f0b00e8;
 	}
 	public static final class layout {
 		public static final int ic_spitview_horizontal = 0x7f030003;
 		public static final int ic_spitview_vertical = 0x7f030004;
 		public static final int item_emoticon = 0x7f030005;
 		public static final int item_toolbtn = 0x7f030006;
-		public static final int view_apps = 0x7f030039;
-		public static final int view_autoheight = 0x7f03003a;
-		public static final int view_emoticonspager = 0x7f03003b;
-		public static final int view_emoticonstoolbar = 0x7f03003c;
-		public static final int view_keyboardbar = 0x7f03003d;
-		public static final int view_keyboardpopwindow = 0x7f03003e;
+		public static final int view_apps = 0x7f03003c;
+		public static final int view_autoheight = 0x7f03003d;
+		public static final int view_emoticonspager = 0x7f03003e;
+		public static final int view_emoticonstoolbar = 0x7f03003f;
+		public static final int view_keyboardbar = 0x7f030040;
+		public static final int view_keyboardpopwindow = 0x7f030041;
 	}
 	public static final class menu {
 		public static final int main = 0x7f0a0000;

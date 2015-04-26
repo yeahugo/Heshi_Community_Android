@@ -42,7 +42,7 @@ public class EmoticonsUtils {
                      */
                     ArrayList<EmoticonBean> xhsfaceArray = ParseData(xhsemojiArray, EmoticonBean.FACE_TYPE_NOMAL, ImageBase.Scheme.ASSETS);
                     EmoticonSetBean xhsEmoticonSetBean = new EmoticonSetBean("xhs", 3, 7);
-                    xhsEmoticonSetBean.setIconUri("assets://xhsemoji_19.png");
+                    xhsEmoticonSetBean.setIconUri("assets://f023.png");
                     xhsEmoticonSetBean.setItemPadding(20);
                     xhsEmoticonSetBean.setVerticalSpacing(10);
                     xhsEmoticonSetBean.setShowDelBtn(true);
@@ -172,26 +172,26 @@ public class EmoticonsUtils {
     小红书表情
      */
     public static String[] xhsemojiArray = {
-            "xhsemoji_1.png,[无语]",
-            "xhsemoji_2.png,[汗]",
-            "xhsemoji_3.png,[瞎]",
-            "xhsemoji_4.png,[口水]",
-            "xhsemoji_5.png,[酷]",
-            "xhsemoji_6.png,[哭] ",
-            "xhsemoji_7.png,[萌]",
-            "xhsemoji_8.png,[挖鼻孔]",
-            "xhsemoji_9.png,[好冷]",
-            "xhsemoji_10.png,[白眼]",
-            "xhsemoji_11.png,[晕]",
-            "xhsemoji_12.png,[么么哒]",
-            "xhsemoji_13.png,[哈哈]",
-            "xhsemoji_14.png,[好雷]",
-            "xhsemoji_15.png,[啊]",
-            "xhsemoji_16.png,[嘘]",
-            "xhsemoji_17.png,[震惊]",
-            "xhsemoji_18.png,[刺瞎]",
-            "xhsemoji_19.png,[害羞]",
-            "xhsemoji_20.png,[嘿嘿]",
-            "xhsemoji_21.png,[嘻嘻]"};
+            "f000.png,[无语]",
+            "f001.png,[汗]",
+            "f002.png,[瞎]",
+            "f003.png,[口水]",
+            "f004.png,[酷]",
+            "f005.png,[哭] ",
+            "f006.png,[萌]",
+            "f007.png,[挖鼻孔]",
+            "f008.png,[好冷]",
+            "f009.png,[白眼]",
+            "f010.png,[晕]",
+            "f011.png,[么么哒]",
+            "f012.png,[哈哈]",
+            "f013.png,[好雷]",
+            "f014.png,[啊]",
+            "f015.png,[嘘]",
+            "f016.png,[震惊]",
+            "f017.png,[刺瞎]",
+            "f018.png,[害羞]",
+            "f019.png,[嘿嘿]",
+            "f020.png,[嘻嘻]"};
 
 }
