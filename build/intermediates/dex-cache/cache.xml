@@ -5,15 +5,8 @@
         jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_sdk/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b54b0d370e4179f33486c0c35ef610d267e7bb32">
+        sha1="0d4e64c58fe5160b23607fa6bc1cb53a01faef7b">
         <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/classes-7f278f4904b5215c32a0cff13eed457a01e7c9ac.jar" />
-    </item>
-    <item
-        jar="/Applications/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/support-v4-19.1.0-b8ba20a7aabbd679a9a553be36f51001a66f5ad0.jar" />
     </item>
     <item
         jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/libs/SocialSDK_QQZone_1.jar"
@@ -23,11 +16,11 @@
         <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_1-0f1642b726a686b150abccde9328e6f45173e3c2.jar" />
     </item>
     <item
-        jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/libs/SocialSDK_QQZone_2.jar"
+        jar="/Applications/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4a69b33758dcba3ef519cbd4b6c8af5f41603c4f">
-        <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_2-eea3159a5fab22bfd9beeab30ae86b41ce922263.jar" />
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/support-v4-19.1.0-b8ba20a7aabbd679a9a553be36f51001a66f5ad0.jar" />
     </item>
     <item
         jar="/Users/yeahugo/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
@@ -35,6 +28,13 @@
         revision="21.1.2"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
         <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/library-2.4.0-1cc463dcb9af9b1605bc3864b2b53c342871ff3b.jar" />
+    </item>
+    <item
+        jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/libs/SocialSDK_QQZone_2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4a69b33758dcba3ef519cbd4b6c8af5f41603c4f">
+        <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/SocialSDK_QQZone_2-eea3159a5fab22bfd9beeab30ae86b41ce922263.jar" />
     </item>
     <item
         jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/libs/umeng_community_sdk_core.jar"
@@ -79,6 +79,13 @@
         <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/com.umeng.message.lib-2506786efcde4983737fbe2a6f555b1308610748.jar" />
     </item>
     <item
+        jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8e3dc22bb4205c974b5fe7c13fb5e17478232246">
+        <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/classes-b1b3b0c4893befb68a9b8cf5047b4ab77304a13c.jar" />
+    </item>
+    <item
         jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/libs/umeng_comm_weixin.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -86,17 +93,10 @@
         <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/umeng_comm_weixin-413854862801ec217011a7cc69cc2c1ee27ab8e1.jar" />
     </item>
     <item
-        jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/umeng_community_android_library/unspecified/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a4b59abd79e57f6028e6de1370433c5e9341148f">
-        <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/classes-b1b3b0c4893befb68a9b8cf5047b4ab77304a13c.jar" />
-    </item>
-    <item
         jar="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/exploded-aar/heshi_android/XhsEmoticonsKeyboard/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="133266c6a96591a3d8e10032e93cf98a96c1f4bc">
+        sha1="767e4c454f42eb0df7e5981f654b2aa1a579210a">
         <dex dex="/Users/yeahugo/Documents/project/Community/heshi_android/mainActivity/build/intermediates/pre-dexed/debug/classes-a2a7d628e0d13fe9436a5c924b3775e156b338d6.jar" />
     </item>
     <item

@@ -133,13 +133,13 @@ public final class FeedViewUtils {
                 String emojiName = textArray[1];
                 if (emojiName.equalsIgnoreCase(matchString)){
                     String emojiId = textArray[0];
-                    Log.d("resName ",emojiId);
+//                    Log.d("resName ",emojiId);
                     emojiId = emojiId.substring(0,emojiId.length()-4);
                     int resourceId= getResId(emojiId,R.drawable.class);
                     if (resourceId > 0)
                     {
                         Drawable dr = context.getResources().getDrawable(resourceId);
-                        dr.setBounds(0, 0, dr.getIntrinsicWidth()*4/5, dr.getIntrinsicHeight()*4/5);
+                        dr.setBounds(0, 0, dr.getIntrinsicWidth()/2, dr.getIntrinsicHeight()/2);
                         ImageSpan imageSpan = new ImageSpan(dr);
                         contentSsb.setSpan(imageSpan,matcher.start(), matcher.end(),Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                         break;
