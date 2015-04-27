@@ -127,13 +127,11 @@ public final class FeedViewUtils {
 
         while(matcher.find()){
             String matchString = matcher.group(0);
-            Log.d("Debug:::::::",matchString);
             for (String resNameString : mSmileyToRes){
                 String[] textArray = resNameString.split(",");
                 String emojiName = textArray[1];
                 if (emojiName.equalsIgnoreCase(matchString)){
                     String emojiId = textArray[0];
-//                    Log.d("resName ",emojiId);
                     emojiId = emojiId.substring(0,emojiId.length()-4);
                     int resourceId= getResId(emojiId,R.drawable.class);
                     if (resourceId > 0)

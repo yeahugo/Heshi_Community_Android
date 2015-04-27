@@ -49,22 +49,22 @@ public class EmoticonsUtils {
                     xhsEmoticonSetBean.setEmoticonList(xhsfaceArray);
                     dbHelper.insertEmoticonSet(xhsEmoticonSetBean);
 
-                    /**
-                     * FROM FILE
-                     */
-                    String filePath = Environment.getExternalStorageDirectory() + "/wxemoticons";
-                    try{
-                        FileUtils.unzip(context.getAssets().open("wxemoticons.zip"), filePath);
-                    }catch(IOException e){
-                        e.printStackTrace();
-                    }
-
-                    XmlUtil xmlUtil = new XmlUtil(context);
-                    EmoticonSetBean bean =  xmlUtil.ParserXml(xmlUtil.getXmlFromSD(filePath + "/wxemoticons.xml"));
-                    bean.setItemPadding(20);
-                    bean.setVerticalSpacing(5);
-                    bean.setIconUri("file://" + filePath + "/icon_030_cover.png");
-                    dbHelper.insertEmoticonSet(bean);
+//                    /**
+//                     * FROM FILE
+//                     */
+//                    String filePath = Environment.getExternalStorageDirectory() + "/wxemoticons";
+//                    try{
+//                        FileUtils.unzip(context.getAssets().open("wxemoticons.zip"), filePath);
+//                    }catch(IOException e){
+//                        e.printStackTrace();
+//                    }
+//
+//                    XmlUtil xmlUtil = new XmlUtil(context);
+//                    EmoticonSetBean bean =  xmlUtil.ParserXml(xmlUtil.getXmlFromSD(filePath + "/wxemoticons.xml"));
+//                    bean.setItemPadding(20);
+//                    bean.setVerticalSpacing(5);
+//                    bean.setIconUri("file://" + filePath + "/icon_030_cover.png");
+//                    dbHelper.insertEmoticonSet(bean);
 
                     /**
                      * FROM HTTP/HTTPS

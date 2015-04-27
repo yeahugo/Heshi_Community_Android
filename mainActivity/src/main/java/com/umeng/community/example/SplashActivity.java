@@ -32,7 +32,7 @@ public class SplashActivity extends Activity {
 		
 		View view = findViewById(R.id.guide);
 		AlphaAnimation animation = new AlphaAnimation(0.0f,1.0f);
-		animation.setDuration(1000);
+		animation.setDuration(4000);
 		animation.setAnimationListener(new AnimationListener(){
 
 			@Override
@@ -48,7 +48,7 @@ public class SplashActivity extends Activity {
 
 			@Override
 			public void onAnimationRepeat(Animation animation) {
-				
+
 			}});
 		view.startAnimation(animation);
 	}
