@@ -57,7 +57,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author mrsimple
  *
  */
-public class FeedEditText extends EditText {
+public class FeedEditText extends com.keyboard.view.EmoticonsEditText {
 
     /**
      * @好友的map
@@ -99,7 +99,6 @@ public class FeedEditText extends EditText {
      */
     public FeedEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-
         // 添加监听器
         this.addTextChangedListener(new TextWatcher() {
 

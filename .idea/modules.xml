@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/XhsEmoticonsKeyboard/XhsEmoticonsKeyboard.iml" filepath="$PROJECT_DIR$/XhsEmoticonsKeyboard/XhsEmoticonsKeyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/heshi_android.iml" filepath="$PROJECT_DIR$/heshi_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/mainActivity/mainActivity.iml" filepath="$PROJECT_DIR$/mainActivity/mainActivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/umeng_community_android_library/umeng_community_android_library.iml" filepath="$PROJECT_DIR$/umeng_community_android_library/umeng_community_android_library.iml" />

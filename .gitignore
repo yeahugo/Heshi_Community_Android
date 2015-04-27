@@ -1,0 +1,5 @@
+build/*
+mainActivity/build/*
+umeng_community_android_library/build/*
+umeng_community_android_sdk/build/*
+XhsEmoticonsKeyboard/build/*
